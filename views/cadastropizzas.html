@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Cadastro Produto</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- ===== ICONS ===== -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+
+    <main class="container">
+        <header class="py-4">
+            <p class="h4">Cadastro de Produto</p>
+        </header>
+        <form class="w-100" method="POST" enctype="multipart/form-data">
+
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="descrição">Descrição:</label>
+                    <input type="text" name="name" class="form-control" id="name" aria-describedby="name"
+                        placeholder="Digite a descrição">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-sm-4 form-group">
+                    <label for="valor-pequena">Valor para tamanho pequeno:</label>
+                    <input type="number" name="pequena" class="form-control" id="pequena" aria-describedby="pequena"
+                        placeholder="Digite o valor para tamanho pequeno">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="valor-media">Valor para tamanho médio:</label>
+                    <input type="number" name="media" class="form-control" id="media" aria-describedby="media"
+                        placeholder="Digite o valor para tamanho médio">
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="valor-grande">Valor para tamanho grande:</label>
+                    <input type="number" name="grande" class="form-control" id="grande" aria-describedby="grande"
+                        placeholder="Digite o valor para tamanho grande">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="col-sm-4 form-group">
+                    <label for="imagem">Anexe uma imagem:</label>
+                    <input type="file" name="imagem" class="form-control" id="imagem" aria-describedby="imagem">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="form-row">
+                <button type="submit" name="cadastro" style="background-color: #f67a46; border: none;"
+                    class="btn btn-success btn-block">
+                    Cadastrar
+                </button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

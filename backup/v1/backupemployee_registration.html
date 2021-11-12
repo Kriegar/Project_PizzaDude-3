@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/employee.css" />
+
+    <title>Pizza Dude</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="cadastro">
+        <form method="post" action="">
+          <h1>Cadastro Func</h1>
+
+          <div class="lado_esq">
+            <div class="dados_pessoal">
+              <p>
+                <label for="">Nome : </label>
+                <input
+                  id=""
+                  name="nome_func"
+                  required="required"
+                  type="text"
+                  placeholder="Nome"
+                />
+              </p>
+
+              <p>
+                <label for="">E-mail : </label>
+                <input
+                  id=""
+                  name="email_func"
+                  required="required"
+                  type="email"
+                  placeholder="E-mail"
+                />
+              </p>
+
+              <p>
+                <label for="">Telefone : </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone_func"
+                  pattern="[0-9]{2}-[0-9]{1}-[0-9]{4}-[0-9]{4}"
+                  placeholder="11-1-1111-1111"
+                  required
+                />
+              </p>
+
+              <p>
+                <label for=""> CPF : </label>
+                <input
+                  type="text"
+                  name="cpf_func"
+                  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                  title="Digite um CPF no formato: xxx.xxx.xxx-xx"
+                  placeholder="CPF -  xxx.xxx.xxx-xx"
+                />
+              </p>
+
+              <p>
+                <label for="">Data de Nascimento : </label>
+                <input id="" name="nasc_func" required="required" type="date" />
+              </p>
+            </div>
+
+            <div class="endereco">
+              <p>
+                <label for="">Endereço : </label>
+                <input
+                  id=""
+                  name="endereco_func"
+                  required="required"
+                  type="text"
+                  placeholder="Endereço"
+                />
+              </p>
+
+              <p>
+                <label for="">Número : </label>
+                <input
+                  id=""
+                  name="number_func"
+                  required="required"
+                  type="number"
+                  placeholder="Número"
+                />
+              </p>
+
+              <p>
+                <label for="">CEP : </label>
+                <input
+                  id=""
+                  name="cep_func"
+                  required="required"
+                  type=""
+                  placeholder="CEP"
+                />
+              </p>
+            </div>
+          </div>
+
+          <div class="lado_dir">
+            <div class="sexo">
+              <p>Sexo - Escolha uma opção</p>
+              <select name="sexo_tipo" required>
+                <option value=""></option>
+                <option value="Cisgênero">Cisgênero</option>
+                <option value="Transgênero">Transgênero</option>
+                <option value="Não-binário">Não-binário</option>
+              </select>
+            </div>
+
+            <div class="cargo">
+              <p>Cargo - Escolha uma opção</p>
+              <select name="cargo_tipo" required>
+                <option value=""></option>
+                <option value="Atendente">Atendente</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Entregador">Entregador</option>
+                <option value="Pizzaiolo">Pizzaiolo</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="Cadastrar">
+            <input type="submit" value="Cadastrar" />
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/employee.js"></script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/customer.css" />
+
+    <title>Cadastro - Pizza Dude</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="cadastro">
+        <form method="post" action="/cliente">
+          <h1>Cadastro Cli</h1>
+
+          <div class="dados_pessoal">
+            <p>
+              <label for="">Nome : </label>
+              <input 
+                id="" 
+                name="nome" 
+                type="text" 
+                placeholder="Nome" 
+                required
+              />
+            </p>
+
+            <p>
+              <label for=""> CPF : </label>
+              <input
+                type="text"
+                name="cpf_cli"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                title="Digite um CPF no formato: xxx.xxx.xxx-xx"
+                placeholder="CPF -  xxx.xxx.xxx-xx"
+                required
+              />
+            </p>
+          </div>
+
+          <div class="endereco">
+            <p>
+              <label for="">Endereço : </label>
+              <input
+                id=""
+                name="endereco_cli"
+                type="text"
+                placeholder="Endereço"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="">Número : </label>
+              <input
+                id=""
+                name="number_cli"
+                type="number"
+                placeholder="Número"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="">CEP : </label>
+              <input
+                id=""
+                name="cep_cli"
+                type=""
+                pattern="\d{5}-\d{3}"
+                title="Digite um CEP no formato: xxxxx-xxx"
+                placeholder="CEP - 00000-000"
+                required
+              />
+            </p>
+          </div>
+
+          <p>
+            <input type="submit" value="Cadastrar" />
+          </p>
+
+          <p class="">
+            Já tem conta?
+            <br />
+            <a href=""> Pedido </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/customer.js"></script>
+</html>
